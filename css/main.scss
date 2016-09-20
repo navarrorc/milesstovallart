@@ -13,6 +13,7 @@ html, body {
 img {
     max-width: 100%;
     height: auto;
+    // display: block;
 }
 
 header {
@@ -20,12 +21,24 @@ header {
 }
 
 main {
-    padding-top: 100px;
+    // padding-top: 100px;
     text-align: center;
     line-height: 3rem;
-    min-height: 100vh;
+    // min-height: 100vh;
     color: #fff;
 }
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // padding-top: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/img/san-antonio.jpg) no-repeat 50%;
+    // opacity: .5;
+    background-size: cover;
+    min-height: 100vh;
+}
+
 .event-title {
     color: #f91b10;
     font-size: 3.5rem;
@@ -48,6 +61,7 @@ main {
     color: #f91b10;
 }
 .gallery {
+    margin-top: 20px;
     padding: 0 2%;
 }
 .gallery > div {
