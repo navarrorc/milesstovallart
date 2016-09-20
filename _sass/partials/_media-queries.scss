@@ -29,12 +29,26 @@
     content: "620px";
     color: orange;
   }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  // .gallery {
+  //   padding: 0 2%;
+  // }
+
 }
 
 @media screen and (min-width: 810px) {
   .page::before {
     content: "810px";
     color: slateblue;
+  }
+  .gallery > div {
+    padding: 20px;
+    padding-bottom: 0;
+    background: #faefcd;
   }
 }
 

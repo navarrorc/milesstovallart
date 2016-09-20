@@ -3,17 +3,20 @@
 ---
 @charset "utf-8";
 @import 'https://fonts.googleapis.com/css?family=Great+Vibes';
-html {
-    font-size: 62.5%;
-}
-body {
+
+html, body {
     // ...
+    font-size: 62.5%;
     background: #000;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+header {
+    font-size: 1.6rem;
 }
 
 main {
@@ -47,7 +50,26 @@ main {
 .gallery {
     padding: 0 2%;
 }
+.gallery > div {
+    margin-bottom: 10px;
+}
+.frame {
+    height: 30px;
+    background: #faefcd;
+}
+.frame b {
+    color: #000;
+    font-size: 1.6rem;
+}
+.frame b::after {
+    content: '"';
+}
 
+// bootstrap overrides
+.navbar-inverse {
+    background: #000;
+    border-color: #080808;
+}
 
 @import "partials/media-queries";
 
