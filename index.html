@@ -12,25 +12,45 @@ layout: default
         <span class="description03">Saturday, November 5, 2016, 5pm-9pm</span><br>
     </p>
 </section>
-<section class="gallery">
-    <div>
-        <img src="{{ site.github.url }}/assets/img/dandy_lion.jpg">
-        <div class="frame"><b>48 X 60</b></div>
-    </div>
-    <div>
-        <img src="{{ site.github.url }}/assets/img/sunflower.jpg">
-        <div class="frame"><b>36 X 48</b></div>
-    </div>
-    <div>
-        <img src="{{ site.github.url }}/assets/img/pears.jpg">
-        <div class="frame"><b>24 X 30</b></div>
-    </div>
-    <div>
-        <img src="{{ site.github.url }}/assets/img/cactus.jpg">
-        <div class="frame"><b>24 X 30</b></div>
-    </div>
-    <div>
-        <img src="{{ site.github.url }}/assets/img/cowboy_boots.jpg">
-        <div class="frame"><b>24 X 30</b></div>
-    </div>
+<!--<section class="gallery" id="nanoGallery">-->
+<!--    {% for art in site.art_gallery %}-->
+<!--        <a href="{{art.image}}" data-ngthumb="{{art.image}}" data-ngdesc="{{art.height}} X {{art.width}}"></a>-->
+       
+        
+<!--    {% endfor %}-->
+<!--</section>-->
+
+
+<!--    <div class="title">-->
+<!--     <h2>Gallery</h2>-->
+<!--</div>-->
+<section class="main">
+   
+<div><img src="{{site.github.url}}/assets/img/cactus.jpg" alt>
+<h2>24 X 30"</h2>
+<a href="#"><h6>INQUIRE FOR PRICE</h6></a>
+
+</div>
+<div><img src="{{site.github.url}}/assets/img/cowboy_boots.jpg" alt>
+<h2>24 X 30"</h2>
+<a href="#"><h6>INQUIRE FOR PRICE</h6></a>
+
+</div>
+<div><img src="{{site.github.url}}/assets/img/dandy_lion.jpg" alt>
+<h2>48 X 60"</h2>
+<a href="#"><h6>INQUIRE FOR PRICE</h6></a>
+
+</div>
+<div><img src="{{site.github.url}}/assets/img/pears.jpg" alt>
+<h2>24 X 30"</h2>
+<a href="#"><h6>INQUIRE FOR PRICE</h6></a>
+
+</div>
+<div><img src="{{site.github.url}}/assets/img/sunflower.jpg" alt>
+<h2>36 X 48"</h2>
+<a href="#"><h6>INQUIRE FOR PRICE</h6></a>
+
+</div>
+<p class="legal">Copyright Miles Stovall(c) 2016 Copyright Holder All Rights Reserved.</p>
 </section>
+  <!-- images placed inside block elements to deal with a Firefox rendering bug affecting  scaled flexbox images -->

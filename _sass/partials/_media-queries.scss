@@ -22,6 +22,7 @@
     content: "480px";
     color: maroon;
   }
+
 }
 
 @media screen and (min-width: 620px) {
@@ -29,14 +30,6 @@
     content: "620px";
     color: orange;
   }
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  // .gallery {
-  //   padding: 0 2%;
-  // }
 
 }
 
@@ -45,11 +38,35 @@
     content: "810px";
     color: slateblue;
   }
-  .gallery > div {
-    padding: 20px;
-    padding-bottom: 0;
-    background: #faefcd;
-  }
+.two{
+  flex-direction: row;
+}
+.one{
+  height: 350px;
+}
+.two{
+  height: 250px;
+}
+
+.event_content{
+    width: 30%;
+}
+.event_pic{
+    
+    width: 100%;
+    height: 300px;
+    background: teal;
+    background-size: cover;
+    
+}
+
+.event_content{
+    width: 40%;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    background:  linear-gradient(rgba(0, 0, 0,.5), rgba(0, 0, 0,.8));
+}
 }
 
 @media screen and (min-width: 1400px) {

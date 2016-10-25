@@ -3,6 +3,10 @@
 ---
 @charset "utf-8";
 @import 'https://fonts.googleapis.com/css?family=Great+Vibes';
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+
 
 html, body {
     // ...
@@ -10,80 +14,330 @@ html, body {
     background: #000;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    // display: block;
-}
-
 header {
     font-size: 1.6rem;
 }
 
-main {
-    // padding-top: 100px;
-    text-align: center;
-    line-height: 3rem;
-    // min-height: 100vh;
-    color: #fff;
-}
+// main {
+//     // padding-top: 100px;
+//     text-align: center;
+//     // min-height: 100vh;
+//     color: #fff;
+//     background: #000;
+// }
 .banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     // padding-top: 100px;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/img/san-antonio.jpg) no-repeat 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../assets/img/san-antonio3.jpg) no-repeat 50%;
     // opacity: .5;
     background-size: cover;
+    background-attachment: fixed;
     min-height: 100vh;
+    text-align: center;
+    color: #fff;
 }
 
 .event-title {
     color: #f91b10;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     text-transform: uppercase;
     font-family: Arial, sans-serif;
+
+
 }
 .event-title::before, .event-title::after{
     content: '"';
 }
 .event-subtitle {
-    font-size: 2.43rem;
+    font-size: 3.43rem;
     font-family: 'Great Vibes', cursive;
 }
 .description00 {
     font-family: Arial, sans-serif;
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     font-style: italic;
 }
 .description01, .description02 {
     color: #f91b10;
-}
-.gallery {
-    margin-top: 20px;
-    padding: 0 2%;
-}
-.gallery > div {
-    margin-bottom: 10px;
-}
-.frame {
-    height: 30px;
-    background: #faefcd;
-}
-.frame b {
-    color: #000;
-    font-size: 1.6rem;
-}
-.frame b::after {
-    content: '"';
+    text-shadow: 2px 2px 2px #000 ;
 }
 
 // bootstrap overrides
 .navbar-inverse {
+    font-family: sans-sarif;
     background: #000;
     border-color: #080808;
 }
+
+
+//gallery
+.main{
+    color:#fff;
+     background: linear-gradient(rgba(50, 50, 50,.4), rgba(50, 50, 50,1.0));
+     
+}
+.title{
+ 
+    width: 400px;
+    margin: auto;
+}
+.title h2 {
+    font-size: 50pt;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 3px #f91b10;
+    letter-spacing: 3px;
+}
+body { margin: 0; background: #333; }
+.main { 
+  padding: 1vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
+  display: flex;
+}
+.main div { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto; 
+    width: 350px; 
+    margin: 10px .5vw; 
+
+}
+.main div img { 
+  width: 100%; 
+  height: auto; 
+  max-width: 450px;
+  box-shadow: 0px 0px 20px 3px #000;
+    
+}
+.main div img:hover {
+transition: .3s  ease-in-out;
+
+}
+.main div a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    background: #000;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+.main div a:hover {
+    background: #fff;
+    color: #f91b10;
+}
+footer{
+    color: #fff;
+    text-align: center;
+}
+.legal{
+    margin: 15px 0;
+}
+
+
+
+
+//Meet the artist
+
+
+
+
+.page2{
+    color:#fff;
+    text-align: center;
+    font-family: sans-sarif;
+    background: #000;
+}
+.page2 h1 {
+    text-shadow: 1px 1px 3px #f91b10;
+    margin: 0 0 0 0;
+    padding: 20px 0 0 0;
+    font-family: 'Pacifico', cursive;
+
+}
+.artist_img{
+    margin-top: 50px;
+    background:  url({{site.github.url}}/assets/img/stovall.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: top center;
+}
+.about{
+  width: 100%;
+  height: auto;
+  font-size: 13pt;
+  background: #000;
+  background-size: cover;
+}
+.one{
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    max-width: 600px;
+    height: auto;
+    margin: 10px auto;
+    font-size: 16pt;
+    border-bottom: 1px solid #f91b10;
+}
+.two{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #f91b10;
+}
+.para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.sec1 {
+   background: linear-gradient(rgba(0, 0, 0,.5), rgba(0, 0, 0,.8)), url({{site.gitub.url}}/assets/img/brush.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+}
+.sec2 {
+      background: linear-gradient(rgba(0, 0, 0,.5), rgba(0, 0, 0,.8)), url({{site.gitub.url}}/assets/img/brush2.jpeg);
+      background-size: cover;
+      background-attachment: fixed;
+}
+.sec3 {
+      background: linear-gradient(rgba(0, 0, 0,.5), rgba(0, 0, 0,.8)), url({{site.gitub.url}}/assets/img/brush3.jpeg);
+      background-size: cover;
+      background-attachment: fixed;
+}
+.sec4 {
+      background: linear-gradient(rgba(0, 0, 0,.5), rgba(0, 0, 0,.8)), url({{site.gitub.url}}/assets/img/traffic.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+}
+
+
+
+// Event
+
+
+.page3{
+    
+    background: #000;
+    
+}
+
+
+.main_banner{
+    
+    // put actual venue pictures here
+    background: url({{site.github.url}}/assets/img/brush.jpg);        
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: 51px 0 0 0;
+}
+
+.event_content{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+    background:  linear-gradient(rgba(0, 0, 0,.5), rgba(0, 0, 0,.8));
+}
+
+.event_content p {
+    font-size: 12pt;
+    padding-top: 80px;
+}
+
+
+.event_banner{
+    
+    // put actual venue pictures here
+    background: url({{site.github.url}}/assets/img/brush2.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+.event_banner2{
+    
+    // put actual venue pictures here
+    background: url({{site.github.url}}/assets/img/brush3.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+   
+}
+.info{
+    width: 40%;
+    height: 100vh;
+    float: right;
+    text-align: center;
+    color: #fff;
+    background:  linear-gradient(rgba(0, 0, 0,.5), rgba(0, 0, 0,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 0 30px;
+    
+
+}
+.info2{
+    width: 40%;
+    height: 100vh;
+    float: left;
+    text-align: center;
+    color: #fff;
+    background:  linear-gradient(rgba(0, 0, 0,.5), rgba(0, 0, 0,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 0 30px;
+
+}
+a.button{
+    text-decoration: none;
+    color: #f91b10;
+    font-size: 14pt;  
+    padding: 20px 0;
+    transition: .3s ease-in-out;
+}
+
+a.button:hover {
+    
+    color: #fff;
+}
+
+
 
 @import "partials/media-queries";
 
