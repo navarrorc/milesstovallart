@@ -12,6 +12,7 @@ html, body {
     // ...
     font-size: 62.5%;
     background: #000;
+    text-align: center;
 }
 
 header {
@@ -84,6 +85,11 @@ header {
     width: 400px;
     margin: auto;
 }
+
+.name{
+    color: #f91b10 ;
+}
+
 .title h2 {
     font-size: 50pt;
     padding-bottom: 15px;
@@ -237,7 +243,31 @@ footer{
       background-attachment: fixed;
 }
 
+// .button{
+    
+//     background: #333;
+//     width: 100%;
+//     text-align: center;
+//     height: 50px;
+//     color: #fff;
+// }
+// .button:hover{
+//     background: #000;
+//     color:#f91b10;
+// }
 
+// .button a {
+    
+//     font-size: 20pt;
+//     text-decoration: none;
+//     text-align: center;
+//     width: 100%;
+// }
+
+// .button a:hover{
+    
+//     color:#f91b10;
+// }
 
 // Event
 
@@ -247,6 +277,7 @@ footer{
     background: #000;
     
 }
+
 
 
 .main_banner{
