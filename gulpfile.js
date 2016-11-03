@@ -8,7 +8,8 @@ gulp.task('serve', function(){
     var options = {
         server: {baseDir: '_site/'},
         port: process.env.PORT,
-        ui: { port: 8081 }
+        ui: { port: 8081 },
+        ghostMode: false
     };
     browserSync.init(options);
     gulp.watch('_site/**/*.*').on('change', browserSync.reload);

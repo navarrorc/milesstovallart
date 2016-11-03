@@ -43,7 +43,7 @@ header {
 
 .event-title {
     color: #f91b10;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     font-family: sans-serif;
 
@@ -54,7 +54,7 @@ header {
 }
 .event-subtitle {
     font-size: 3.43rem;
-    font-family: 'Great Vibes', cursive;
+    font-family: sans-serif;
 }
 .description00 {
     font-family: sans-serif;
@@ -169,10 +169,10 @@ footer{
     background: #000;
 }
 .page2 h1 {
-    text-shadow: 1px 1px 3px #f91b10;
+    // text-shadow: 1px 1px 1px #f91b10;
     margin: 20px 0 0 0;
     padding: 20px 0 0 0;
-    font-family: 'Pacifico', cursive;
+    font-family: san-serif;
 
 }
 .artist_img{
@@ -188,27 +188,28 @@ footer{
 .about{
   width: 100%;
   height: auto;
-  font-size: 13pt;
+  font-size: 18pt;
   background: #000;
   background-size: cover;
 }
 .one{
-    padding: 15px 0;
+    padding: 15px 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     max-width: 600px;
     height: auto;
-    margin: 10px auto;
-    font-size: 16pt;
+    margin: 0px auto;
+    font-size: 18pt;
 }
 .two{
     padding: 20px 0;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;        
+    height: 1000px;        
     border-bottom: 1px solid #f91b10;
     border-top: 1px solid #f91b10;
     
@@ -218,8 +219,40 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    flex-basis: 50%;
     padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #f91b10;
+    border-top: 1px solid #f91b10;
+    
+}
+
+.para p {
+    
+    padding: 15px;
+}
+
+.full {
+//   max-width: 600px;
+//   padding: 15px;
+    border-bottom: 1px solid #f91b10;
+    border-top: 1px solid #f91b10;
+}
+
+.button2{
+    display: block;
+    border: 1px solid #f91b10;
+    padding: 15px 20px;
+    background: #000;
+    width: 350px;
+    margin: 0 auto 80px auto;
+    transition: .3s ease-in-out;
+    font-size: 18pt;
+    border-radius: 8px;
+}
+.button2:hover{
+    width: 100%;
+    background: #000;
+    
 }
 
 .sec1 {
@@ -351,17 +384,17 @@ footer{
 
 }
 .info2{
-    width: 40%;
-    height: 100vh;
-    float: left;
+    width: 100%;
+    height: auto;
     text-align: center;
+    float: left;
     color: #fff;
     background:  linear-gradient(rgba(0, 0, 0,.5), rgba(0, 0, 0,.8));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    padding: 0 30px;
+    padding: 60px 30px 0 30px;
 
 }
 
@@ -369,20 +402,36 @@ footer{
     
     font-size: 12pt;
 }
-
+.come_by{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f91b10;
+    padding: 12px 25px;
+    transition: .3s ease-in-out;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 13pt;
+}
+.come_by:hover{
+    background: #000;
+    padding: 18px 80px;
+}
 a.button{
+    color: #fff;
     text-decoration: none;
-    color: #f91b10;
-    font-size: 13pt;  
-    padding: 20px 0;
     transition: .3s ease-in-out;
 }
 
 a.button:hover {
-    
-    color: #fff;
+    color: #f91b10;
 }
 
+.info2 h3 {
+    color: #f91b10;
+    font-size: 28pt;
+    text-shadow: 2px 2px 2px #000 ;
+}
 
 
 //Contact Page
